@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch App</title>
+  <link rel="stylesheet" href="stop.css">
+</head>
+<body>
+  <div class="stopwatch-container">
+    <div class="time-display" id="timeDisplay">00:00:00
+      <span class="status-indicator status-stopped" id="statusIndicator"></span>
+    </div>
+
+    <div class="controls">
+      <button class="btn start-btn" id="startBtn">Start</button>
+      <button class="btn pause-btn" id="pauseBtn" disabled>Pause</button>
+      <button class="btn reset-btn" id="resetBtn">Reset</button>
+      <button class="btn lap-btn" id="lapBtn" disabled>Lap</button>
+    </div>
+
+    <div class="lap-times" id="lapTimes" style="display: none;">
+      <h3>Lap Times</h3>
+      <div id="lapList"></div>
+      <button class="btn clear-laps" id="clearLapsBtn">Clear Laps</button>
+    </div>
+  </div>
+  <script src="stop.js"></script>
+</body>
+</html>
